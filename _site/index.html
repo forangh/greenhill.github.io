@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="这里是 @Greenhill青山 的博客 | Greenhill Blog">
+    <meta name="keywords" content="青山, greenhill青山, Greenhill, 圣人, truth, @zlon.eth, 青山的博客, Greenhill Blog, 博客, 个人网站, 互联网, Web3, metaverse, crypto, meta, nft, DAO">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="青山的博客 | Greenhill blog">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="「Greenhill Blog」">
+    
+    <meta property="og:image" content="http://localhost:4000/img/redfish.jpg">
+    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:site_name" content="青山的博客 | Greenhill blog">
+
+    <title>青山的博客 | Greenhill blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">山外青山,楼外楼</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="博客内容搜索...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Page Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading">
+        
+          <h1>山外青山,楼外楼</h1>
+          <span class="subheading">「Greenhill Blog」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    
+
+    <!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
+      col-xs-12 postlist-container">
+      
+<div class="post-preview">
+    <a href="/2022/09/25/%E9%87%91%E9%92%B1%E7%9A%84%E6%83%A9%E7%BD%9A/">
+        <h2 class="post-title">
+            金钱与惩罚
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                有时候，我认为金钱其实不是奖励而是惩罚。当你渴望它时就会被它奴役，然后变成一个唯利是图的人。然后为了留住它同时变成一个薄情寡义的人，你不可能同时拥有白天和夜晚。平和的人拥有平和，富有的人拥有孤独，当你拥有天下，就是孤家寡人。当你为自由与和平而坚持，没有人可以战胜你。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E6%97%A0%E7%9F%A5%E4%B8%8E%E7%96%BE%E7%97%85/">
+        <h2 class="post-title">
+            无知与疾病
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                世界上几乎所有的战争起源都是因为对食品短缺的恐慌，人类最大的敌人是无知与疾病。没有所谓的改变世界，时代的变迁是时间的问题，同一方向行驶的列车没有对错，都会到达目的地。对于列车本身来说，各个结构发挥各自的优势，如果都要当车头，显然都到不了站。了解自己，知道有所能有所不能。我们的优势是技术应用的创新，互联网时代的基础已然超前所有人，如果再回头看工业时代的巨子而自愧不如，是不合时宜的。一个人与一个...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E6%96%87%E6%98%8E%E7%9A%84%E7%BA%A7%E5%88%AB/">
+        <h2 class="post-title">
+            文明的级别
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                文明无论级别高低，要么是无欲无求，要么是争斗不止，无欲无求者天性自足，争斗不止者神性俱足纯粹至极，所以才水火不融。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E5%BF%AB%E4%B9%90%E6%8C%87%E6%95%B0/">
+        <h2 class="post-title">
+            快乐指数
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                假如这个世界是魔鬼创造的，痛苦就是常态  假如这个世界是仁慈的上帝创造的，快乐就是常态，判断自己是生活在天堂还是地狱，就看快乐指数。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E5%AE%9A%E6%95%B0%E4%B8%8E%E5%8F%98%E6%95%B0/">
+        <h2 class="post-title">
+            定数与变数
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                如果有定数，可以理解为你的前生、今世、来生已经按模版安排好，你就是来走个过场回放一下，至于先放来生的还是前生的都无所谓，反正已经彩排好了。而在你经历的过程中，产生了思想并主动做了选择，是会出现变数的。就是选择的偏差，虽然大多数时候结果是一样的，但还是有人会跳出定数，因变数而不一样，至于是更好一点还是更坏一点都有可能。自己的路还是自己走，慎重选择，有些路走了就回不了头。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E5%A6%82%E6%9E%9C%E5%9B%BD%E5%AE%B6%E5%88%B0%E4%BA%86%E5%8D%B1%E9%9A%BE%E4%B9%8B%E6%97%B6-%E4%BD%A0%E6%84%BF%E6%84%8F%E6%94%BE%E5%BC%83%E5%A6%BB%E5%AD%90%E5%AD%A9%E5%AD%90%E7%88%B6%E6%AF%8D-%E4%B8%BA%E5%9B%BD%E6%8D%90%E8%BA%AF%E5%90%97/">
+        <h2 class="post-title">
+            如果国家到了危难之时，你愿意放弃妻子孩子父母，为国捐躯吗？
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                战争是政治的延伸，政治是经济的外交，经济是资本的对话。一个国家有两种可能引发危机，一是无能，二是膨胀，我不知道哪种更值得保护？ 退一万步讲战争是军人的职责，如果你的邻国鼓动平民参与战争，你是选择屠杀来规避风险还是选择退缩来换取苟活？ 到底是什么人会让孩子们挡在前面？你眼里的敌人也是别人家的英雄，让一个英雄杀死另一个英雄到底是为了少数人的优雅，还是为了多数人的温饱？自古以来无论兴亡百姓皆苦，我...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E5%A4%A9%E4%B8%8B%E5%A4%A7%E5%90%8C/">
+        <h2 class="post-title">
+            天下大同
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                工业时代的贫富差距只会越来越大，且发展中国家比发达国家更严重，有效的解决办法是完善二次分配与保障机制。经济就是效率，效率就是分工，越末端所占资源越少。工业流程前端技术更密集，工业流程尾端劳动更密集，附加值一眼便知。这件事情已经超越城市与乡村，也超越国与家主义，需要站在天下大同的角度考虑。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E5%91%BD%E8%BF%90%E6%98%AF%E4%BB%80%E4%B9%88/">
+        <h2 class="post-title">
+            命运是什么？
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                命运就是好好活着，不管遇到什么事，尽力把经历的每件小事做好，按时吃饭保证睡眠。
+
+好好活着，重点是要好好的，不要作死，一个人会失败的唯一原因就是聪明过头了，不要自作聪明就不会失败。
+
+当然，不会失败的人也不会有所成就，一个人功成名就必定是你的对手成就了你，没有对手的人就没有人放大你的错误，自然就不能凸显你的优势。
+
+好好活着，就是三分天注定七分靠打拼，天注定的部分，有人天生就喜欢破坏，也有人...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%A7%B0%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA/">
+        <h2 class="post-title">
+            什么样的人能称得上是世界上最伟大的人？
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                尧帝仁义，宁可把地位传给舜也不给自己的儿子。天下为公，所以才能统一联盟。
+
+舜帝擅长制陶，所以制造了陶币，在贸易中起了关键作用，才壮大了联盟。从个人角度，即使家里的继母 兄弟、父亲迫害他，他也表现出隐忍。
+
+禹帝擅长治水，当然也遗传自父亲对天下水系的了解，虽然结局有点悲剧至少基础已经打好，三过家门不入的投入工作导致积劳成疾。
+
+联盟建立并壮大以后就需要治理自然灾害，是时代造就了英雄，也是英雄...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2022/09/25/%E4%BA%BA%E7%9A%84%E5%91%BD%E8%BF%90%E5%A4%A9%E6%B3%A8%E5%AE%9A-%E4%BD%A0%E5%90%8C%E6%84%8F%E5%90%97/">
+        <h2 class="post-title">
+            人的命运天注定，你同意吗？
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+        <div class="post-content-preview">
+            
+                如果命运从一开始就是不可打破的话，就不会从一到二，就不会出现人类。大多数人都只是在完成自己既定的程序，完成自己的使命，或者说是在命运中迷失了自己而走不出来。其实你的明天就在你的手里，原则上来说，我们所有人都是从一而来的，所以每个人都应该有这个天分跳出阴阳循环，如果自己真的不知道自己该做什么的时候，就把手头的事做到最好，不存分辨心，就一定会跳出三界外不在五行中。因为不计较就必然超额完成任务，连...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 青山 on September 25, 2022
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    </div>
+    <!-- Sidebar Container -->
+    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
+      col-xs-12 sidebar-container">
+      <!-- Featured Tags -->
+      
+
+
+<section>
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+        
+                <a data-sort="0001" 
+                    href="/archive/?tag=%E8%A7%81%E8%87%AA%E5%B7%B1"
+                    title="见自己"
+                    rel="13">见自己</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=%E5%91%BD%E8%BF%90"
+                    title="命运"
+                    rel="2">命运</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=%E6%88%98%E4%BA%89"
+                    title="战争"
+                    rel="2">战争</a>
+    </div>
+</section>
+
+
+      <!-- Short About -->
+      <section class="visible-md visible-lg">
+  <hr>
+  <h5><a href="/about/">ABOUT ME</a></h5>
+  <div class="short-about">
+    
+    <img src="/img/redfish.jpg" />
+    
+    
+    <p>「 青山 」的博客 <br> &emsp;山外青山,楼外楼 <br> &emsp;@zlon.eth</p>
+    
+    <!-- SNS Link -->
+    
+
+
+<ul class="list-inline">
+
+
+  
+  
+  <li>
+    <a href="https://twitter.com/w13910880050">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/metatopnews">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a target="_blank" href="http://weibo.com/zlonmedia">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a target="_blank" href="http://douyin.com/user/MS4wLjABAAAAhktK3OAfxIpP-u_jSB-GBfPq46CPBxEMNDGPOsPkiPI">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-play-circle fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+  </div>
+</section>
+
+      <!-- Friends Blog -->
+      
+<hr>
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+  <li><a href=""></a></li>
+  
+</ul>
+
+
+      <!-- Ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- first shot -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
+     data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  <li>
+    <a href="https://twitter.com/w13910880050">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/metatopnews">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a target="_blank" href="http://weibo.com/zlonmedia">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a target="_blank" href="http://douyin.com/user/MS4wLjABAAAAhktK3OAfxIpP-u_jSB-GBfPq46CPBxEMNDGPOsPkiPI">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-play-circle fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 山外青山,楼外楼 2022
+                    <br>
+                    Powered by <a href="http://zlon.com.cn">ZlonMeida</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
