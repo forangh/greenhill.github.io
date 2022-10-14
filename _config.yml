@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: forangh@gmail.com
 description: "这里是 @Greenhill青山 的博客 | Greenhill Blog"
 keyword: "青山, greenhill青山, Greenhill, 圣人, truth, @zlon.eth, 青山的博客, Greenhill Blog, 博客, 个人网站, 互联网, Web3, metaverse, crypto, meta, nft, DAO"
-url: "" # your host, for absolute URL
+url: "https://forangh.github.io/greenhill.github.io/" # your host, for absolute URL
 baseurl: "https://forangh.github.io/greenhill.github.io/" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
