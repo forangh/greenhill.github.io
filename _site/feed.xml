@@ -3,10 +3,10 @@
   <channel>
     <title>山外青山,楼外楼</title>
     <description>这里是 @Greenhill青山 的博客 | Greenhill Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 15 Oct 2022 10:57:00 +0800</pubDate>
-    <lastBuildDate>Sat, 15 Oct 2022 10:57:00 +0800</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 15 Oct 2022 11:34:46 +0800</pubDate>
+    <lastBuildDate>Sat, 15 Oct 2022 11:34:46 +0800</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;有时候，我认为金钱其实不是奖励而是惩罚。当你渴望它时就会被它奴役，然后变成一个唯利是图的人。然后为了留住它同时变成一个薄情寡义的人，你不可能同时拥有白天和夜晚。平和的人拥有平和，富有的人拥有孤独，当你拥有天下，就是孤家寡人。当你为自由与和平而坚持，没有人可以战胜你。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E9%87%91%E9%92%B1%E7%9A%84%E6%83%A9%E7%BD%9A/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E9%87%91%E9%92%B1%E7%9A%84%E6%83%A9%E7%BD%9A/</guid>
+        <link>/2022/09/25/%E9%87%91%E9%92%B1%E7%9A%84%E6%83%A9%E7%BD%9A/</link>
+        <guid isPermaLink="true">/2022/09/25/%E9%87%91%E9%92%B1%E7%9A%84%E6%83%A9%E7%BD%9A/</guid>
         
         <category>见自己</category>
         
@@ -31,8 +31,8 @@
         <description>&lt;p&gt;世界上几乎所有的战争起源都是因为对食品短缺的恐慌，人类最大的敌人是无知与疾病。没有所谓的改变世界，时代的变迁是时间的问题，同一方向行驶的列车没有对错，都会到达目的地。对于列车本身来说，各个结构发挥各自的优势，如果都要当车头，显然都到不了站。了解自己，知道有所能有所不能。我们的优势是技术应用的创新，互联网时代的基础已然超前所有人，如果再回头看工业时代的巨子而自愧不如，是不合时宜的。一个人与一个国家一样，想要有作为，短板不是不补，而是要优势最大化。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E6%97%A0%E7%9F%A5%E4%B8%8E%E7%96%BE%E7%97%85/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E6%97%A0%E7%9F%A5%E4%B8%8E%E7%96%BE%E7%97%85/</guid>
+        <link>/2022/09/25/%E6%97%A0%E7%9F%A5%E4%B8%8E%E7%96%BE%E7%97%85/</link>
+        <guid isPermaLink="true">/2022/09/25/%E6%97%A0%E7%9F%A5%E4%B8%8E%E7%96%BE%E7%97%85/</guid>
         
         <category>见自己</category>
         
@@ -46,8 +46,8 @@
         <description>&lt;p&gt;文明无论级别高低，要么是无欲无求，要么是争斗不止，无欲无求者天性自足，争斗不止者神性俱足纯粹至极，所以才水火不融。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E6%96%87%E6%98%8E%E7%9A%84%E7%BA%A7%E5%88%AB/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E6%96%87%E6%98%8E%E7%9A%84%E7%BA%A7%E5%88%AB/</guid>
+        <link>/2022/09/25/%E6%96%87%E6%98%8E%E7%9A%84%E7%BA%A7%E5%88%AB/</link>
+        <guid isPermaLink="true">/2022/09/25/%E6%96%87%E6%98%8E%E7%9A%84%E7%BA%A7%E5%88%AB/</guid>
         
         <category>见自己</category>
         
@@ -61,8 +61,8 @@
         <description>&lt;p&gt;假如这个世界是魔鬼创造的，痛苦就是常态  假如这个世界是仁慈的上帝创造的，快乐就是常态，判断自己是生活在天堂还是地狱，就看快乐指数。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E5%BF%AB%E4%B9%90%E6%8C%87%E6%95%B0/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E5%BF%AB%E4%B9%90%E6%8C%87%E6%95%B0/</guid>
+        <link>/2022/09/25/%E5%BF%AB%E4%B9%90%E6%8C%87%E6%95%B0/</link>
+        <guid isPermaLink="true">/2022/09/25/%E5%BF%AB%E4%B9%90%E6%8C%87%E6%95%B0/</guid>
         
         <category>见自己</category>
         
@@ -78,8 +78,8 @@
         <description>&lt;p&gt;如果有定数，可以理解为你的前生、今世、来生已经按模版安排好，你就是来走个过场回放一下，至于先放来生的还是前生的都无所谓，反正已经彩排好了。而在你经历的过程中，产生了思想并主动做了选择，是会出现变数的。就是选择的偏差，虽然大多数时候结果是一样的，但还是有人会跳出定数，因变数而不一样，至于是更好一点还是更坏一点都有可能。自己的路还是自己走，慎重选择，有些路走了就回不了头。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E5%AE%9A%E6%95%B0%E4%B8%8E%E5%8F%98%E6%95%B0/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E5%AE%9A%E6%95%B0%E4%B8%8E%E5%8F%98%E6%95%B0/</guid>
+        <link>/2022/09/25/%E5%AE%9A%E6%95%B0%E4%B8%8E%E5%8F%98%E6%95%B0/</link>
+        <guid isPermaLink="true">/2022/09/25/%E5%AE%9A%E6%95%B0%E4%B8%8E%E5%8F%98%E6%95%B0/</guid>
         
         <category>见自己</category>
         
@@ -95,8 +95,8 @@
         <description>&lt;p&gt;战争是政治的延伸，政治是经济的外交，经济是资本的对话。一个国家有两种可能引发危机，一是无能，二是膨胀，我不知道哪种更值得保护？ 退一万步讲战争是军人的职责，如果你的邻国鼓动平民参与战争，你是选择屠杀来规避风险还是选择退缩来换取苟活？ 到底是什么人会让孩子们挡在前面？你眼里的敌人也是别人家的英雄，让一个英雄杀死另一个英雄到底是为了少数人的优雅，还是为了多数人的温饱？自古以来无论兴亡百姓皆苦，我们应该尽一切努力消灭战争，无知与疾病才是我们最大的敌人。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E5%A6%82%E6%9E%9C%E5%9B%BD%E5%AE%B6%E5%88%B0%E4%BA%86%E5%8D%B1%E9%9A%BE%E4%B9%8B%E6%97%B6-%E4%BD%A0%E6%84%BF%E6%84%8F%E6%94%BE%E5%BC%83%E5%A6%BB%E5%AD%90%E5%AD%A9%E5%AD%90%E7%88%B6%E6%AF%8D-%E4%B8%BA%E5%9B%BD%E6%8D%90%E8%BA%AF%E5%90%97/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E5%A6%82%E6%9E%9C%E5%9B%BD%E5%AE%B6%E5%88%B0%E4%BA%86%E5%8D%B1%E9%9A%BE%E4%B9%8B%E6%97%B6-%E4%BD%A0%E6%84%BF%E6%84%8F%E6%94%BE%E5%BC%83%E5%A6%BB%E5%AD%90%E5%AD%A9%E5%AD%90%E7%88%B6%E6%AF%8D-%E4%B8%BA%E5%9B%BD%E6%8D%90%E8%BA%AF%E5%90%97/</guid>
+        <link>/2022/09/25/%E5%A6%82%E6%9E%9C%E5%9B%BD%E5%AE%B6%E5%88%B0%E4%BA%86%E5%8D%B1%E9%9A%BE%E4%B9%8B%E6%97%B6-%E4%BD%A0%E6%84%BF%E6%84%8F%E6%94%BE%E5%BC%83%E5%A6%BB%E5%AD%90%E5%AD%A9%E5%AD%90%E7%88%B6%E6%AF%8D-%E4%B8%BA%E5%9B%BD%E6%8D%90%E8%BA%AF%E5%90%97/</link>
+        <guid isPermaLink="true">/2022/09/25/%E5%A6%82%E6%9E%9C%E5%9B%BD%E5%AE%B6%E5%88%B0%E4%BA%86%E5%8D%B1%E9%9A%BE%E4%B9%8B%E6%97%B6-%E4%BD%A0%E6%84%BF%E6%84%8F%E6%94%BE%E5%BC%83%E5%A6%BB%E5%AD%90%E5%AD%A9%E5%AD%90%E7%88%B6%E6%AF%8D-%E4%B8%BA%E5%9B%BD%E6%8D%90%E8%BA%AF%E5%90%97/</guid>
         
         <category>政治</category>
         
@@ -114,8 +114,8 @@
         <description>&lt;p&gt;工业时代的贫富差距只会越来越大，且发展中国家比发达国家更严重，有效的解决办法是完善二次分配与保障机制。经济就是效率，效率就是分工，越末端所占资源越少。工业流程前端技术更密集，工业流程尾端劳动更密集，附加值一眼便知。这件事情已经超越城市与乡村，也超越国与家主义，需要站在天下大同的角度考虑。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E5%A4%A9%E4%B8%8B%E5%A4%A7%E5%90%8C/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E5%A4%A9%E4%B8%8B%E5%A4%A7%E5%90%8C/</guid>
+        <link>/2022/09/25/%E5%A4%A9%E4%B8%8B%E5%A4%A7%E5%90%8C/</link>
+        <guid isPermaLink="true">/2022/09/25/%E5%A4%A9%E4%B8%8B%E5%A4%A7%E5%90%8C/</guid>
         
         <category>见自己</category>
         
@@ -139,8 +139,8 @@
 &lt;p&gt;当下就是最好的，不管你在经历着什么，都是命运赋予你的使命，认真把手头的每件小事做好，好好活着，不存分辨心，就能跳出命运轮回并且向着自己的理想前进。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E5%91%BD%E8%BF%90%E6%98%AF%E4%BB%80%E4%B9%88/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E5%91%BD%E8%BF%90%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+        <link>/2022/09/25/%E5%91%BD%E8%BF%90%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+        <guid isPermaLink="true">/2022/09/25/%E5%91%BD%E8%BF%90%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
         
         <category>命运</category>
         
@@ -166,8 +166,8 @@
 &lt;p&gt;你的本心和你的专业技能是这个时代发展最需要的，就有机会创造属于你的历史，当然这些都和买车买房拼命赚钱没有关系，你选择了这个时代并且这个时代选择了你，就放手去做吧。物质作为附属品会追随你的，毕竟伟大的人有衣服穿才能伟大，又不是创世纪的亚当。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%A7%B0%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%A7%B0%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA/</guid>
+        <link>/2022/09/25/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%A7%B0%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA/</link>
+        <guid isPermaLink="true">/2022/09/25/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%A7%B0%E5%BE%97%E4%B8%8A%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E4%BC%9F%E5%A4%A7%E7%9A%84%E4%BA%BA/</guid>
         
         <category>伟大</category>
         
@@ -183,8 +183,8 @@
         <description>&lt;p&gt;如果命运从一开始就是不可打破的话，就不会从一到二，就不会出现人类。大多数人都只是在完成自己既定的程序，完成自己的使命，或者说是在命运中迷失了自己而走不出来。其实你的明天就在你的手里，原则上来说，我们所有人都是从一而来的，所以每个人都应该有这个天分跳出阴阳循环，如果自己真的不知道自己该做什么的时候，就把手头的事做到最好，不存分辨心，就一定会跳出三界外不在五行中。因为不计较就必然超额完成任务，连命运也拿你没办法。&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Sep 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2022/09/25/%E4%BA%BA%E7%9A%84%E5%91%BD%E8%BF%90%E5%A4%A9%E6%B3%A8%E5%AE%9A-%E4%BD%A0%E5%90%8C%E6%84%8F%E5%90%97/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/25/%E4%BA%BA%E7%9A%84%E5%91%BD%E8%BF%90%E5%A4%A9%E6%B3%A8%E5%AE%9A-%E4%BD%A0%E5%90%8C%E6%84%8F%E5%90%97/</guid>
+        <link>/2022/09/25/%E4%BA%BA%E7%9A%84%E5%91%BD%E8%BF%90%E5%A4%A9%E6%B3%A8%E5%AE%9A-%E4%BD%A0%E5%90%8C%E6%84%8F%E5%90%97/</link>
+        <guid isPermaLink="true">/2022/09/25/%E4%BA%BA%E7%9A%84%E5%91%BD%E8%BF%90%E5%A4%A9%E6%B3%A8%E5%AE%9A-%E4%BD%A0%E5%90%8C%E6%84%8F%E5%90%97/</guid>
         
         <category>命运</category>
         
